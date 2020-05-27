@@ -21,6 +21,7 @@ class ConversationViewController: UIViewController {
         
         questionText.layer.cornerRadius = 14
         questionText.clipsToBounds = true
+        
     }
     
     @IBAction func showMessage(sender: UIButton) {

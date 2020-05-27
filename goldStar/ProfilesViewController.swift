@@ -28,6 +28,10 @@ class ProfilesViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        navigationController?.navigationBar.barTintColor = UIColor.black
+        navigationController?.navigationBar.titleTextAttributes = [.foregroundColor: UIColor.systemYellow]
+
+        
         nameLabel.text = selectedMatch.name
         bioAnswerText.text = selectedMatch.bioAnswer
         profPicOne.image = selectedMatch.profilePicTop
@@ -57,7 +61,6 @@ class ProfilesViewController: UIViewController {
     
     }
     
-
 
     /*
     // MARK: - Navigation

@@ -11,7 +11,7 @@ import UIKit
 class Matches {
     
     var name = ""
-    var bioAnswer = ""
+    var bioAnswer = "Oops, they haven't answered yet!"
     var age : Int = 0
     var position = ""
     var profilePicTop = UIImage()

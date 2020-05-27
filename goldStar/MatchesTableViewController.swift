@@ -18,6 +18,9 @@ class MatchesTableViewController: UITableViewController {
         super.viewDidLoad()
 
         matches = createMatches()
+        
+        navigationController?.navigationBar.barTintColor = UIColor.black
+        navigationController?.navigationBar.titleTextAttributes = [.foregroundColor: UIColor.systemYellow]
     
     }
 
@@ -28,8 +31,8 @@ class MatchesTableViewController: UITableViewController {
       matchOne.bioAnswer = "You have to get up and place your trash in the trashcan. I'm always tempted to show off my ~*nonexistent*~ skillz and go for a three pointer!"
         matchOne.profilePicTop = UIImage(imageLiteralResourceName: "marnieProfPic")
         matchOne.profilePicBottom = #imageLiteral(resourceName: "marnieProfPicTwo")
-        //matchOne.age =
-        //matchOne.position =
+        matchOne.age = 27
+        matchOne.position = "High School Math"
         
 
       let matchTwo = Matches()
@@ -42,17 +45,36 @@ class MatchesTableViewController: UITableViewController {
         
         let matchThree = Matches()
         matchThree.name = "Amy"
-        matchThree.bioAnswer = ""
+        //matchThree.bioAnswer = ""
        //matchThree.profilePicTop =
         //matchThree.profilePicBottom =
         //matchThree.age =
-        //matchThree.position =
+        matchThree.position = "Coding SuperStar"
         
         let matchFour = Matches()
         matchFour.name = "Ellen Mary"
-        matchFour.bioAnswer = ""
+        //matchFour.bioAnswer = ""
+        matchFour.position = "Leadership RockStar"
         
-      return [matchOne, matchTwo, matchThree, matchFour]
+        let matchFive = Matches()
+        matchFive.name = "Karlie"
+        
+        let matchSix = Matches()
+        matchSix.name = "Josh"
+        
+        let matchSeven = Matches()
+        matchSeven.name = "Zach"
+        
+        let matchEight = Matches()
+        matchEight.name = "Nick"
+        
+        let matchNine = Matches()
+        matchNine.name = "Priyanka"
+        
+        let matchTen = Matches()
+        matchTen.name = "Joe"
+        
+      return [matchOne, matchTwo, matchThree, matchFour, matchFive, matchSix, matchSeven, matchEight, matchNine, matchTen]
     }
 
     override func numberOfSections(in tableView: UITableView) -> Int {
@@ -76,7 +98,11 @@ class MatchesTableViewController: UITableViewController {
         //let cellPic = match.profilePicTop
         
         cell.textLabel?.text = "🌟" + match.name + "🌟"
+        if match.age > 0 {
         cell.detailTextLabel?.text = "Age \(match.age), Teaches \(match.position)"
+        } else {
+            cell.detailTextLabel?.text = "Ageless, Teaches \(match.position)"
+        }
         cell.imageView?.image = match.profilePicTop
         
         cell.imageView?.layer.cornerRadius = 14

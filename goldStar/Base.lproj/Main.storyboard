@@ -155,6 +155,7 @@
                         <viewLayoutGuide key="safeArea" id="W9D-ch-Ouw"/>
                     </view>
                     <navigationItem key="navigationItem" id="Dop-XF-7SE"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" barStyle="black" prompted="NO"/>
                     <connections>
                         <outlet property="bioAnswerText" destination="Ncz-1s-Dzp" id="DSd-fE-92w"/>
                         <outlet property="bioQuestion" destination="6gH-jZ-YzJ" id="VsC-M8-fQD"/>
@@ -252,8 +253,10 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
+        <segue reference="C64-ZA-b3Y"/>
         <segue reference="plP-4a-Z5W"/>
     </inferredMetricsTieBreakers>
+    <color key="tintColor" red="1" green="0.85490196080000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
     <resources>
         <image name="goldStarOne" width="1400" height="1163"/>
         <image name="goldStarTwo" width="768" height="768"/>
