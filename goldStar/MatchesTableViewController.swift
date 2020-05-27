@@ -12,6 +12,8 @@ class MatchesTableViewController: UITableViewController {
     
     var matches : [Matches] = []
 
+    @IBOutlet weak var tableViewPic: UIImageView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -24,19 +26,27 @@ class MatchesTableViewController: UITableViewController {
       let matchOne = Matches()
       matchOne.name = "Marnie"
       matchOne.bioAnswer = "You have to get up and place your trash in the trashcan. I'm always tempted to show off my ~*nonexistent*~ skillz and go for a three pointer!"
-        matchOne.profilePicTop = #imageLiteral(resourceName: "marnieProfPic")
+        matchOne.profilePicTop = UIImage(imageLiteralResourceName: "marnieProfPic")
         matchOne.profilePicBottom = #imageLiteral(resourceName: "marnieProfPicTwo")
+        //matchOne.age =
+        //matchOne.position =
         
 
       let matchTwo = Matches()
         matchTwo.name = "Lucas"
-        matchTwo.bioAnswer = ""
-        //matchTwo.profilePicTop =
-        //matchTwo.profilePicBottom = 
+        matchTwo.bioAnswer = "No headphones in class. If I want to jam out to Ariana Grande and Lady Gaga's new hit single 'Rain On Me' in the middle of class, then that's what I'm gonna do!"
+        matchTwo.profilePicTop = #imageLiteral(resourceName: "lucasProfPicOne")
+        matchTwo.profilePicBottom = #imageLiteral(resourceName: "lucasProfPicTwo")
+        matchTwo.age = 22
+        matchTwo.position = "7th Grade English and Social Studies"
         
         let matchThree = Matches()
         matchThree.name = "Amy"
         matchThree.bioAnswer = ""
+       //matchThree.profilePicTop =
+        //matchThree.profilePicBottom =
+        //matchThree.age =
+        //matchThree.position =
         
         let matchFour = Matches()
         matchFour.name = "Ellen Mary"
@@ -61,8 +71,17 @@ class MatchesTableViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
+
         let match = matches[indexPath.row]
-        cell.textLabel?.text = match.name
+        //let cellPic = match.profilePicTop
+        
+        cell.textLabel?.text = "🌟" + match.name + "🌟"
+        cell.detailTextLabel?.text = "Age \(match.age), Teaches \(match.position)"
+        cell.imageView?.image = match.profilePicTop
+        
+        cell.imageView?.layer.cornerRadius = 14
+        cell.imageView?.clipsToBounds = true
+        
         return cell
     }
 

@@ -20,6 +20,9 @@ class ProfilesViewController: UIViewController {
     @IBOutlet weak var profPicTwo: UIImageView!
     @IBOutlet weak var bioAnswerText: UITextView!
     
+    @IBOutlet weak var profPicTwoLabel: UITextView!
+    @IBOutlet weak var bioQuestion: UITextView!
+    @IBOutlet weak var profPicOneLabel: UITextView!
     
     
     override func viewDidLoad() {
@@ -40,6 +43,17 @@ class ProfilesViewController: UIViewController {
         profPicTwo.layer.borderWidth = 3
         profPicTwo.layer.borderColor = UIColor.white.cgColor
         
+        nameLabel.layer.cornerRadius = 14
+        nameLabel.clipsToBounds = true
+        
+        profPicOneLabel.layer.cornerRadius = 14
+        profPicOneLabel.clipsToBounds = true
+        
+        profPicTwoLabel.layer.cornerRadius = 14
+        profPicTwoLabel.clipsToBounds = true
+        
+        bioQuestion.layer.cornerRadius = 14
+        bioQuestion.clipsToBounds = true
     
     }
     

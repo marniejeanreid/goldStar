@@ -12,6 +12,8 @@ class Matches {
     
     var name = ""
     var bioAnswer = ""
+    var age : Int = 0
+    var position = ""
     var profilePicTop = UIImage()
     var profilePicBottom = UIImage()
     
