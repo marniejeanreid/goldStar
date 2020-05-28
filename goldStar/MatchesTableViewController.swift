@@ -112,14 +112,16 @@ class MatchesTableViewController: UITableViewController {
         
         cell.textLabel?.text = "🌟" + match.name + "🌟"
         if match.age > 0 {
-        cell.detailTextLabel?.text = "Age \(match.age), Teaches \(match.position)"
+        cell.detailTextLabel?.text = "Age \(match.age), Position: \(match.position)"
         } else {
-            cell.detailTextLabel?.text = "Ageless, Teaches \(match.position)"
+            cell.detailTextLabel?.text = "Ageless, Position: \(match.position)"
         }
         cell.imageView?.image = match.profilePicTop
         
         cell.imageView?.layer.cornerRadius = 14
         cell.imageView?.clipsToBounds = true
+        //trying to get a fixed image size in Table cells, but this next line of code has no effect
+        //cell.imageView?.frame = CGRect(x: 0, y: 0, width: 0, height: 0)
         
         return cell
     }
