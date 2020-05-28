@@ -1,0 +1,21 @@
+{
+  "images" : [
+    {
+      "filename" : "TV63MP1U5-UV64G7BV3-9a1403f549cf-512.jpg",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "images" : [
+    {
+      "filename" : "TV63MP1U5-UUUKL8A83-82384f251d6b-512-1.jpg",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

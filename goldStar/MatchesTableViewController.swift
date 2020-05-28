@@ -46,7 +46,7 @@ class MatchesTableViewController: UITableViewController {
         let matchThree = Matches()
         matchThree.name = "Amy"
         //matchThree.bioAnswer = ""
-       //matchThree.profilePicTop =
+        matchThree.profilePicTop = #imageLiteral(resourceName: "AmyPic")
         //matchThree.profilePicBottom =
         //matchThree.age =
         matchThree.position = "Coding SuperStar"
@@ -55,24 +55,37 @@ class MatchesTableViewController: UITableViewController {
         matchFour.name = "Ellen Mary"
         //matchFour.bioAnswer = ""
         matchFour.position = "Leadership RockStar"
+        matchFour.profilePicTop = #imageLiteral(resourceName: "EllenMaryPic")
         
         let matchFive = Matches()
         matchFive.name = "Karlie"
+        matchFive.position = "Koding Kween"
+        matchFive.profilePicTop = #imageLiteral(resourceName: "KarlieKlossPic")
         
         let matchSix = Matches()
         matchSix.name = "Josh"
+        matchSix.position = "Bae of Koding Kween"
+        matchSix.profilePicTop = #imageLiteral(resourceName: "JoshPic")
         
         let matchSeven = Matches()
-        matchSeven.name = "Zach"
+        matchSeven.name = "Zac"
+        matchSeven.position = "Musical Theater"
+        matchSeven.profilePicTop = #imageLiteral(resourceName: "ZachPic")
         
         let matchEight = Matches()
         matchEight.name = "Nick"
+        matchEight.position = "Vocal Performance"
+        matchEight.profilePicTop = #imageLiteral(resourceName: "e9910f89fddb056ad0df998fd0dff15a")
         
         let matchNine = Matches()
         matchNine.name = "Priyanka"
+        matchNine.position = "Acting"
+        matchNine.profilePicTop = #imageLiteral(resourceName: "1b6a2d9cb6c7b881445c942b0ff8ae3e")
         
         let matchTen = Matches()
         matchTen.name = "Joe"
+        matchTen.position = "Camp Rock Camp Counselor"
+        matchTen.profilePicTop = #imageLiteral(resourceName: "JoePicTwo")
         
       return [matchOne, matchTwo, matchThree, matchFour, matchFive, matchSix, matchSeven, matchEight, matchNine, matchTen]
     }
